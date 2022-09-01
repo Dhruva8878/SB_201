@@ -1,0 +1,47 @@
+Q.1)
+ans-The layered architecture is the most widely used architectural structure.
+    the main idea behind the layered architecture is to organize the data in
+    horizontal sequence. there are three types.
+    1-Front-end- where the developer design a perfect  UI for the application.
+    2-Back-end- where the developer applies the business logic of the company and manage 
+               accessing data from databases.
+    3-Data- where all the has been saved.
+    
+ Q.2)
+ ans -JDBC is only used for specific database development.where JPA is used
+      is over all the databases development software it gives us more flexibility
+      than the JDBC.
+      
+ Q.3)
+ ans-JPA is not an implementation.It is a java specification.
+      Hibernate is an implementation of JPA.it follows the common standards
+      of the JPA.
+ 
+ Q.4)
+ ans- Java Persistence API(JPA) is related to the ORM. the developer can easily
+      map, store, update and retrieve the data from the databases of java. JPA is mainly
+      used in java based applications.
+      
+ Q.5)
+ ans- ORM uses mapping information to manage the process of converting data between
+      its database and object forms, and generating the SQL for a relational
+      database to insert, update and delete data in response to changes the 
+      the application makes data objects.
+      
+      benefits-
+      
+      1-with the help of ORM, we can write SQL queries more efficiently.
+      2-With ORM we can easily manage data and manipulate the data and also
+        update, delete, and retrieve the data.
+ 
+ Q.6)
+ ans-
+      Hibernate is an open-source Java persistence framework project.
+      Perform powerful object-relational mapping and query databases using SQL.
+ 
+      The key components of Hibernate are:
+      Session: It is used to get a physical network with a database.
+      Transaction: It represents the unit of work with a database.
+      Query: It uses SQL to retrieve the data from the database and create objects.
+                          
+                    
