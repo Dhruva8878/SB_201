@@ -1,11 +1,11 @@
 package com.DAO;
 
-import java.util.List;
+
 import com.Emplo.Employee;
 
 public interface EmployeeDao {
 	
-	public List<Employee> getAllEmployee();
+	public void save(Employee emp);
 	
 	public String getAddressOfEmployee(int empId);
 	

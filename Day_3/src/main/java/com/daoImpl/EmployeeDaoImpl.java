@@ -14,20 +14,18 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	
 	
 	@Override
-	public List<Employee> getAllEmployee() {
-		List<Employee> list=new ArrayList<>();
+	public void save(Employee emp) {
+	EntityManager em=Demo.provideManager();
+	
+	em.getTransaction().begin();
+	em.persist(emp);
+	em.getTransaction().commit();
+	
+	System.out.println("added Successfully");
+	
 		
-		EntityManager em=Demo.provideManager();
-		int index=1;
-		Employee emp=em.find(Employee.class, index);
-		while(emp!=null) {
-			list.add(emp);
-			index++;
-		}
-		
-		em.close();
-		return list;
 	}
+	
 
 	@Override
 	public String getAddressOfEmployee(int empId) {
@@ -116,5 +114,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		em.close();
 		return ans;
 	}
+
+	
 
 }
