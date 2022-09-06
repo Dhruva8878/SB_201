@@ -1,0 +1,9 @@
+
+the major benefit of Hibernate over JDBC. In JDBC there is no
+concept of inheritance or association mapping. In association 
+mapping It is easy to save and manage the database. and in 
+hibernate we can get more flexibility over JDBC while changing,
+updating, and deleting the data from the database.
+Example-
+when we save the parent Entity the child entity will automatically
+saved.

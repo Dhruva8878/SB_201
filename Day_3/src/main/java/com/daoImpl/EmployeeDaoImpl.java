@@ -23,6 +23,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	
 	System.out.println("added Successfully");
 	
+	em.close();
 		
 	}
 	

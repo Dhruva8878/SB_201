@@ -1,0 +1,17 @@
+JPA-
+
+JPA is not implementation. 
+
+JPA uses several classes and interfaces.
+
+JPA supports polymorphism and inheritance.
+
+HIbernate-
+
+hibernate is an implementation of JPA.
+
+to provide good some features to the Hibernate.
+
+Hibernate is a contributor to JPA and it helps in mapping  java data
+type to SQL data types.
+

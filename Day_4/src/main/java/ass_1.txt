@@ -1,0 +1,7 @@
+The instance of EntityManager is associated with a persistence context.
+The EntityManager has methods such as persist, merge, remove, find, etc.
+But there is a problem with when we perform CRUD operations that we will not
+get all data from the databases and cannot update all the entries in databases
+and also we can get the object by the primary key, not with the composite key.
+
+ 
