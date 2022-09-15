@@ -1,0 +1,41 @@
+1)
+ J2EE(Java 2 Enterprise Edition) -J2EE is platform-independent where
+ we use it for developing, building, and uploading web-based application 
+ online.J2EE uses a set of APIs and protocols to develop a web-based
+ application.
+ Example-
+ Apache Tomcat.
+ IBM.
+ Oracle WebLogic.
+ Red Hat.
+ 
+ 
+ 2)
+ Web-server and Application-server are kinds of servers that are used
+ to deliver sites and all the logic and business idea is used by a user
+ and back-end people.
+ 
+ A Web server handles HTTP requests, whereas an application server
+ serves business logic to application programs through any number
+ of protocols 
+ 
+ 3)
+ Changing Business requirements.
+ Security.
+ Data storage.
+ Integrating with other systems.
+ An appropriate level of support.
+ 
+ 4)
+ Before the Spring framework, we have to work with EJB( Enterprise Java Beans )
+ which is hard to use and very complicated to understand and it does not
+ provide that much security and services. Then developers were looking for an 
+ an easier way to build applications. then Spring frameworks come into the market 
+ which reduces all the complications. this framework uses new techniques 
+ Plain Old Java Object (POJO), and dependency injection (DI), to develop 
+ applications. The Spring framework is reliable to use and helps in writing 
+ a clean code and provides various ways to help in managing business objects.
+ 
+ 
+ 
+ 
