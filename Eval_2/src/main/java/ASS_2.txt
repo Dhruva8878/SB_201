@@ -1,0 +1,19 @@
+JPA
+
+JPA is only a specification, it is not an implementation.
+JPA is a set of rules and guidelines.
+JPA requires the support of interfaces and classes.
+It supports polymorphism and inheritance.
+
+Hibernate 
+
+Hibernate is an implementation of JPA guidelines.
+It helps in mapping java data type of SQL.
+it is contributor of JPA.
+
+advantages
+
+ Hibenate performs an object relational mapping framework while JDBC is simply
+ a database connectivity API. and hibernate provide more flexibility over 
+ JDBC and with hibernate we can write less code and perform more tasks over 
+ JDBC.
