@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="std" class="com.masai.Student">
+    
+    <constructor-arg name="roll" value="1"/>
+     <constructor-arg name="name" value="Ram"/>
+      <constructor-arg name="marks" value="450"/>
+    
+    </bean>
+    
+    <bean id="clg" class="com.masai.Collage">
+    
+    <property name="collage_name" value="DAVV"/>
+    <property name="collage_address" value="Indore"/>
+    <property name="student" ref="std"/>
+    
+    </bean>
+
+ </beans>

@@ -1,0 +1,103 @@
+Q.1)
+
+the objects that form the backbone of the application and that are
+managed by the Spring IOC container are called beans. A bean is an object
+that is instantiated and otherwise managed by a Spring IOC container.
+
+the spring container is the core of the spring framework. The container will
+create objects, conclude and manage them from creation to destruction.
+The container gets the instruction from the objects assemble and configure by the 
+configuration metadata. this metadata is represented by the XML, annotations and 
+java class. the IOC container uses java POJO classes to configure the metadata 
+of the application.
+
+Q.2)
+
+In OOP's software design, dependency injection is the process of supplying
+a resource that a given piece of code requires. The required resource, 
+which is often a component of the application itself, is called a dependency.
+
+ IOC inverts the flow of control as compared to traditional control flow.
+ In IOC, custom-written portions of a computer program receive the flow
+ of control from a generic framework.
+ 
+ 
+ Q.3)
+ 
+ tight coupling is like when if you change something in code of class and you 
+ were forced that where you calling the method that you have of the class you 
+ also have to change that calling part and in loose coupling it is inverse of
+ the tight coupling.
+ Example
+ 
+ Tight coupling------------
+ class A{
+ 
+   public void  fun1(){
+        print("inside fun1 of class A")
+    }
+ }
+ 
+ class B {
+ 
+ A a1=new A();
+ 
+ a1.fun1();
+ 
+ }
+ -----------------------------
+ 
+ 
+ loose coupling--------------------
+ 
+ interface Alpha{
+  
+  public void run();
+ 
+ }
+ 
+ 
+ class A{
+ 
+   public void  fun1(){
+        print("inside fun1 of class A")
+    }
+    
+    public void run(){
+    fun1();
+ }
+ 
+ class B {
+ 
+   public void  fun2(){
+        print("inside fun1 of class B")
+    }
+ 
+   public void run(){
+   fun2();
+   }
+ 
+ }
+ 
+ class Demo implements Alpha{
+    
+    static Alpha al;
+    
+    a1.run();
+    
+    public static void main(String[] args){
+    
+    al=new A();
+    
+    
+    }
+ 
+   
+ }
+ 
+ 
+ ---------------------------------------------------
+ 
+ 
+  
+  
