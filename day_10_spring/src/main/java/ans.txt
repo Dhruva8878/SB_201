@@ -1,0 +1,50 @@
+Q.1)
+
+Spring bean is a simple POJO class, it need not be implemented in any other spring 
+framework API or extend any class.
+
+The life cycle of bean class has five stages;
+Does not Exist.
+Instantiated.
+initialized.
+Service.
+Destroy.
+
+Q.2)
+there are five types of spring bean
+1) Singleton
+2) prototype 
+3) Request
+4) Session
+5) Global Session
+
+the default scope for the spring bean is singleton there only one instance is formed for
+spring container. Singleton only manages only one spring bean object and all the requests
+are with an id matching that bean definition will result in that one specific bean instance
+being returned by the Spring container.
+
+
+Q.3)
+constructor based injection requires all the fields to be done else it throws an Exception
+it is not the recommended way to set the values instead of it setters are there to set the 
+values and with setters we only set required values and some times constructor bases injection has
+ambiguity problem but with setters, there is no problem.
+
+
+Q.4)
+This can be done by declaring all the bean dependencies in the Spring configuration file.
+So, Spring can utilize the BeanFactory to know the dependencies across all the
+used beans. The XML-configuration-based autowiring functionality has five modes
+ no, byName, byType, constructor, and autodetect. 
+ 
+ Exa-
+ 
+ <bean name="" value="" autowire="byName" /> 
+ <bean name="" value="" autowire="byType" /> 
+ 
+
+
+
+
+
+ 
