@@ -1,0 +1,14 @@
+A Spring Bean Is an object that forms the backbone of the application
+and that is managed by the Spring IOC container. A bean Object is an 
+an object that is instantiated, assembled and managed by a Spring IoC
+container. otherwise, a bean is simply one of many objects in the 
+application.
+
+life-cycle of Spring Bean
+
+The Bean life cycle is managed by the Spring container. When we the run
+the program first of all spring container is started after that the container 
+creates the instance of the bean as per the request and then dependencies are injected
+and finally, the bean is destroyed when the spring container is closed.
+
+ 

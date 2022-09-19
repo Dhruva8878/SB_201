@@ -1,0 +1,23 @@
+
+Stereotype Annotation are basically used to indicates the "Role of class"
+in the project.
+These annotations are used at different class levels.
+There are four types of annotations are available.
+
+1) @component
+    these annotation is the super/base class of all the above classes. 
+   
+ 2) @Service
+   these annotation is used where we used our business logic of our 
+   program and all the logic related to the business.
+
+3) @Repository
+    these annotation is used to show the data access layer of the our 
+    program and handle all the logic related to the data access layer.
+    
+4) @Controller
+   these annotation is used on class where we handle all the flow
+   our program.
+   
+    
+   
