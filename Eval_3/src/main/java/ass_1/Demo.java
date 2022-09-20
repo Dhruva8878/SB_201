@@ -12,6 +12,9 @@ public class Demo {
 		PresentationBean px= apx.getBean("presentationBean",PresentationBean.class);
 	    
 		px.insertEmployee();
+//		px.searchEmployee();
+//		px.printAllEmployee();
+//		px.deleteEmployee();
 	}
 
 }

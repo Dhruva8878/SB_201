@@ -1,0 +1,34 @@
+ 
+Q.1)
+       Spring MVC framework enables separation of modules namely Model, View and Controller and
+       seamlessly handles the application integration. This enables the developer to create complex               applications also using plain java classes. The model object can be passed between view and controller        using maps.
+
+Q.2)
+        HTTP is a protocol for fetching resources such as HTML documents. it is also used to exchange the data         between the WebServer and the database contained API's , which means requests are initiated by the         recipient, usually the Web browser. A complete document is reconstructed from the different sub-        documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+        
+       For HTTP response and request we use some methods like -
+      Get  , Post  , Put , Delete etc.
+
+Q.3)
+     Web Application :-
+
+      Web Application means for human beign can read. it is accessed through browsers.
+      Web Applicatin has user user Interface.
+      Websites are accessed by using their GUI components – buttons, text boxes, forms, etc.
+
+      Web Services:-
+
+      Web Services means for computers can read. it is accessed from any languages or platform.
+      A web Service doesn't  have user Interface.
+      Web services are accessed by HTTP methods – Get, Post, Put,Delete etc.
+
+
+Q.4)
+        The most commonly-used HTTP methods are Post, Get, Put, and DELETE. These methods are used to         create, read, update, and delete (or CRUD) operations. There are a number of other methods, too, but         they are not frequently used.
+
+        HTTP response status codes
+        Informational responses(100–199)
+        Successful responses(200–299)
+        Redirection messages(300–399)
+        Client error responses(400–499)
+        Server error responses(500–599)
