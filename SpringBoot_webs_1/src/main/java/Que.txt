@@ -1,0 +1,44 @@
+
+Q.1)
+
+A Servlet is  java programming class that is  used to extend the 
+capabilities of servers that host applications accessed by the some 
+requests and response.
+The job of DispatcherServlet is to take an incoming (URI) and
+find the right combination of handlers and views. When the
+DispatcherServlet determines the view, it renders it as the
+response. Finally, the DispatcherServlet returns the Response Object
+to back to the client.
+
+Q.2)
+
+Spring M-V-C
+Spring MVC is a Java framework used to build web-based applications.
+
+Model contains the core data of the application. In general,
+they consist of POJO
+
+Viwe is responsible to generate the Simple HTML view.
+
+Container It consists of all the Business Logic.
+
+
+
+Spring Boot
+Spring Boot is a java framework used to generate REST API's.
+
+client system sends an HTTP request.
+
+This request goes to the controller, and the controller maps and handles it.
+
+The request is passed on to the service layer where all the business
+logic is performed on the data that is mapped to JPA with model classes.
+
+
+Q.3)
+
+REST is a set of guidelines that offers flexible implementation,
+where SOAP is a protocol with specific requirements like XML messaging.
+REST APIs are lightweight, making them ideal for newer contexts
+like the Internet of Things, mobile application development,
+and serverless computing.
