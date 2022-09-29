@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,8 +26,10 @@ public class CurrentUserSession {
 	@Column(unique = true)
 	private Integer userId;
 	
+	@NotNull
 	private LocalDateTime localDateTime;
 	
+	@NotNull
 	private String uuid;
 
 	public CurrentUserSession(Integer userId, LocalDateTime localDateTime, String uuid) {

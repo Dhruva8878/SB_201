@@ -15,11 +15,13 @@ import lombok.NoArgsConstructor;
 public class LoginData {
 	
 	@Id
-	@NotNull
+	@NotNull(message = "userId Is mandatory to search the status")
 	private Integer userId;
 	
+	@NotNull(message = "this field is mandatory")
 	private String name;
 	
+	@NotNull(message = "this field is mandatory")
 	private String password;
 	
 	

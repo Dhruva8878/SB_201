@@ -3,6 +3,7 @@ package com.log.service;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +42,7 @@ public class LoginServiceImpl implements LoginService {
 			
 		CurrentUserSession cur=currentSessionService.getSessionIdByUserId(loginData.getUserId());
 		
-		    if(cur!=null) {
+		    if(cur !=null) {
 		    	throw new LoginException("User Has Already Login");
 		      }
 		    else {
@@ -49,9 +50,15 @@ public class LoginServiceImpl implements LoginService {
 					  GetUuid.getRandomNumberString());
 			   currentUserDAO.save(c);
 			
-			   if(d1.get().getPassword().equals(loginData.getPassword()) && d1.get().getName().equals(loginData.getName())) {
+			   Optional<LoginData> logdata=loginDataDAO.findById(loginData.getUserId());
+			   
+			   if(logdata.isPresent()) {
+				   throw new LoginException("You have already Logedin");
+			   }
+			   else if(d1.get().getPassword().equals(loginData.getPassword()) && d1.get().getName().equals(loginData.getName())) {
 				   return loginDataDAO.save(loginData);
 			   }
+			   
 			   else {
 				   throw new LoginException("user has to give right credentials");
 			   }
