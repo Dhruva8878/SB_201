@@ -32,32 +32,33 @@ public class Idcard {
 		@GeneratedValue(strategy = GenerationType.AUTO)
 		private Integer id;
 		
-		@NotNull(message = "Name Should Be not null")
-		@NotBlank(message = "Name is mandatory")
+		@NotNull(message = "Name Required")
+		@NotBlank(message = "Name Required")
 		private String name;
 		
-		@JsonFormat(shape = JsonFormat.Shape.STRING ,pattern = "dd/mm/yyyy")
+		@JsonFormat(shape = JsonFormat.Shape.STRING ,pattern = "dd/MM/yyyy")
+		@NotNull
 		private LocalDate dob;
 		
-		@NotNull(message = "gender should be Mandatory")
+		@NotNull(message = "Gender Required ")
 		private String gender;
 		
-		@NotNull(message = "Address shuold be required")
+		@NotNull(message = "Address required")
 		@Pattern(regexp = "^[A-Z][a-z]*")
 		private String address;
 		
-		@NotNull(message = "city shuold be required")
+		@NotNull(message = "city required")
 		private String city;
 		
-		@NotNull(message = "State shuold be required")
+		@NotNull(message = "State required")
 		private String state;
 		
 		@NotNull(message = "pincode shuold be required")
-		@Size(min = 6, max = 8)
+		@Size(min = 6, max = 6)
 		private String pincode;
 		
 		@JsonIgnore
-		@OneToOne(cascade = CascadeType.ALL)
+		@OneToOne(cascade = CascadeType.ALL ,mappedBy ="idcard")
 		private Member member;
 		
 		

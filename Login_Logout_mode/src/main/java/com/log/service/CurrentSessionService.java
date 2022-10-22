@@ -1,5 +1,7 @@
 package com.log.service;
 
+import java.util.Optional;
+
 import com.log.exception.LoginException;
 import com.log.exception.SingUpException;
 import com.log.model.CurrentUserSession;
@@ -9,8 +11,8 @@ public interface CurrentSessionService {
 	
 	public SingUp getSignUpdetails(String key) throws SingUpException;
 	
-	public CurrentUserSession getSessionIdByUserId(Integer key);
+	public Optional<CurrentUserSession> getSessionIdByUserId(Integer key);
 
-	public CurrentUserSession getdetailsByuuid(String key) throws LoginException;
+	public Optional<CurrentUserSession> getdetailsByuuid(String key) throws LoginException;
 
 }
