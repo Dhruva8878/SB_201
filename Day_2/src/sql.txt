@@ -1,0 +1,2 @@
+1)  select OrderID,CustomerID,FirstName,Email, sum(Total_Order_Amount) 
+     from orders ORDER BY OrderID ASC; 
