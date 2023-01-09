@@ -1,0 +1,6 @@
+
+
+  for the security purpose we can have java Web Token (JWT) with that we 
+  can generate a token .
+  Also we can put validations on the variables so that we can easily track 
+  that someone not pass any invalid value.  
